@@ -99,10 +99,10 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#e0f1e7] min-h-dvh items-center flex justify-center">
-        <div className="bg-white p-4 rounded-lg shadow-md md:w-1/2 m-14">
+      <ToastContainer />
+      <main className="bg-[#e0f1e7] min-h-dvh items-center flex justify-center">
+        <div className="bg-white p-6 rounded-xl shadow-md md:w-1/2 m-14">
           <h1 className="text-2xl font-bold p-2">Contact Us</h1>
-          <ToastContainer />
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col md:flex-row w-full">
               <div className="p-2 gap-2 md: w-full">
@@ -170,11 +170,10 @@ function App() {
                 Submit
               </button>
             </div>
-
           </form>
         </div>
 
-      </div>
+      </main>
     </>
   )
 }
